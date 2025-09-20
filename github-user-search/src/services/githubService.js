@@ -14,7 +14,7 @@ export const fetchUserData = async (username) => {
 };
 
 
-const GITHUB_SEARCH_API = "https://api.github.com/search/users";
+const GITHUB_SEARCH_API = "https://api.github.com/search/users?q=";
 
 export const fetchAdvancedUsers = async (username, location, minRepos) => {
   try {
