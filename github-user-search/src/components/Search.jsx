@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { fetchUserData } from "../services/githubService";
 
 function Search() {
-  const [username, setUsername] = useState(""); // input value
-  const [userData, setUserData] = useState(null); // API result
-  const [loading, setLoading] = useState(false); // loading state
-  const [error, setError] = useState(null); // error state
+  const [username, setUsername] = useState(""); 
+  const [userData, setUserData] = useState(null); 
+  const [loading, setLoading] = useState(false); 
+  const [error, setError] = useState(null); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,7 +19,7 @@ function Search() {
       const data = await fetchUserData(username);
       setUserData(data);
     } catch (err) {
-      setError("Looks like we can't find the user");
+      setError("Looks like we cant find the user"); // ✅ exact string required
     } finally {
       setLoading(false);
     }
@@ -27,7 +27,7 @@ function Search() {
 
   return (
     <div>
-      
+      {/* Search Form */}
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -38,7 +38,7 @@ function Search() {
         <button type="submit">Search</button>
       </form>
 
-      
+      {/* Conditional Rendering */}
       {loading && <p>Loading...</p>}
       {error && <p style={{ color: "red" }}>{error}</p>}
 
