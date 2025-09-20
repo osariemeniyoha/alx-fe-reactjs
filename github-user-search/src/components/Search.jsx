@@ -17,7 +17,7 @@ function Search() {
 
     try {
       const data = await fetchAdvancedUsers(username, location, minRepos);
-      setUsers(data.items); // GitHub Search API returns { items: [...] }
+      setUsers(data.items); 
     } catch (err) {
       setError("Looks like we cant find the user");
     } finally {
@@ -31,7 +31,7 @@ function Search() {
         GitHub User Search
       </h1>
 
-      {/* Search Form */}
+      
       <form
         onSubmit={handleSubmit}
         className="flex flex-col gap-4 mb-6"
@@ -65,11 +65,11 @@ function Search() {
         </button>
       </form>
 
-      {/* Conditional Rendering */}
+      
       {loading && <p className="text-gray-500">Loading...</p>}
       {error && <p className="text-red-500">{error}</p>}
 
-      {/* Results */}
+      
       {users.length > 0 && (
         <ul className="space-y-4">
           {users.map((user) => (
