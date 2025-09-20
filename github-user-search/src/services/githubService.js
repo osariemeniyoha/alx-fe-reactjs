@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const GITHUB_SEARCH_API = "https://api.github.com/search/users";
-
+const GITHUB_SEARCH_API = "https://api.github.com/search/users?q=";
 
 export const fetchAdvancedUsers = async (username, location, minRepos) => {
   try {
@@ -11,8 +10,8 @@ export const fetchAdvancedUsers = async (username, location, minRepos) => {
     if (location) query += `location:${location} `;
     if (minRepos) query += `repos:>=${minRepos} `;
 
-    const response = await axios.get(`${GITHUB_SEARCH_API}?q=${query}`);
-    return response.data; 
+    const response = await axios.get(`${GITHUB_SEARCH_API}${query}`);
+    return response.data;
   } catch (error) {
     console.error("Error fetching advanced users:", error);
     throw error;
