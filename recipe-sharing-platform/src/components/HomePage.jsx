@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 function HomePage() {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    // fetch local mock data
+    
     fetch("/src/data.json")
       .then((res) => res.json())
       .then((data) => setRecipes(data))

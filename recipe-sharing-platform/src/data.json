@@ -3,18 +3,66 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://via.placeholder.com/300x200"
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": [
+      "200g spaghetti",
+      "2 large eggs",
+      "100g pancetta",
+      "50g grated parmesan cheese",
+      "Black pepper"
+    ],
+    "instructions": [
+      "Boil pasta until al dente.",
+      "Fry pancetta until crispy.",
+      "Whisk eggs and cheese together.",
+      "Combine pasta with pancetta, then mix in egg mixture off heat.",
+      "Season with black pepper and serve."
+    ]
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://via.placeholder.com/300x200"
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": [
+      "500g chicken breast",
+      "150g plain yogurt",
+      "2 onions, chopped",
+      "3 cloves garlic, minced",
+      "1 tbsp ginger paste",
+      "2 tbsp garam masala",
+      "200ml tomato puree",
+      "100ml cream",
+      "Fresh coriander"
+    ],
+    "instructions": [
+      "Marinate chicken with yogurt, garlic, ginger, and spices for at least 1 hour.",
+      "Grill or pan-fry chicken until cooked through.",
+      "Sauté onions in butter, then add tomato puree and spices.",
+      "Stir in cream and simmer until sauce thickens.",
+      "Add grilled chicken pieces to the sauce and cook for 5 more minutes.",
+      "Garnish with fresh coriander and serve with rice or naan."
+    ]
   },
   {
     "id": 3,
     "title": "Avocado Toast",
     "summary": "Toasted bread topped with smashed avocado, olive oil, lemon juice, and salt.",
-    "image": "https://via.placeholder.com/300x200"
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": [
+      "2 slices sourdough bread",
+      "1 ripe avocado",
+      "1 tsp olive oil",
+      "½ lemon, juiced",
+      "Salt and pepper to taste",
+      "Optional toppings: chili flakes, poached egg, feta"
+    ],
+    "instructions": [
+      "Toast the bread until golden brown.",
+      "Mash avocado in a bowl with olive oil, lemon juice, salt, and pepper.",
+      "Spread mashed avocado evenly on the toasted bread.",
+      "Add optional toppings like chili flakes, poached egg, or crumbled feta.",
+      "Serve immediately."
+    ]
   }
 ]
